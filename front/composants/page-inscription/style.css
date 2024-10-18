@@ -1,0 +1,101 @@
+
+body {
+    font-family: Arial, sans-serif;
+    
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+.genre-container label,
+.genre-container input[type="radio"] {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom:3vh;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Réduire la répétition en regroupant les propriétés similaires */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+button {
+    margin-bottom: 10px;
+}
+
+input[type=date] {
+    padding: 8px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 30%; 
+    font-size: 16px; 
+    margin-top: 5px; 
+    font-family: Arial, sans-serif;
+
+}
+button  {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+button:hover {
+    background-color: #0056b3;
+}
+h1{
+    text-align: center;
+
+}
+.messageError{
+    color: red;
+}
+.messageSuccess{
+    color: green;
+}
+
+
+/* Styles pour les écrans de taille inférieure à 600 pixels (typiquement les téléphones) */
+@media screen and (max-width: 600px) {
+    input[type=date],
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        width: 100%; 
+        margin-top: 10px; 
+    }
+}
+
+
+
